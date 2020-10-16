@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch color </title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <button> Switch Color </button>
+    <script type="text/javascript">
+         var color = ["pink" , "red", "yellow", "white", "purple" , "orange" , "black"];
+         var  i=0;
+         document.querySelector("button").addEventListener("click",function()
+         {
+             i= i<color.length ? ++i : 0;
+             document.querySelector("body").style.background = color[i]
+         })
+
+    </script>
+</body>
+</html>
